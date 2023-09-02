@@ -89,10 +89,11 @@ body{
 button{
     color:#f5f1f1;
     background-color: #8f20d2;
-    border-radius: 50px;
+    border-radius: 18px;
     border-color: #d4f3e9;
     padding: 6px;
     margin: 4px;
+    height: 45px;
 }
 input{
     color:#4c2a9b;

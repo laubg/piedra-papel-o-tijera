@@ -12,7 +12,7 @@ input.addEventListener("input", saludarUsuario);
 
 function saludarUsuario(e) {
     
-        saludo.innerHTML = `<h3>"¡Hola "` + e.target.value + `" !"</h3>
+        saludo.innerHTML = `<h3>"¡Hola ` + e.target.value + `!"</h3>
         <h3 class="padding-texto">Jugarás con Garrita🐱, y es un michi al que le encanta ganar, así que prestá mucha atención!.</h3>
         <h3> Recordá que:</h3><br>
         <p class="reglas">
