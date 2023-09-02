@@ -4,11 +4,12 @@
 }
 
 h1{
-    font-family: Paint Brush Script;
+    /* font-family: Paint Brush Script; */
     font-size:8vh;
     text-align:center;
     color:#08d0ffeb;
     padding: 57px;
+    font-family: 'Dancing Script', cursive;
 
 }
 .comenzar{
