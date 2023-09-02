@@ -8,6 +8,9 @@ _*La tijera corta el papel. (Gana la tijera.)_
 _*El papel envuelve la piedra. (Gana el papel.)_
 _*En caso de empate (que dos jugadores elijan el mismo elemento o que tres jugadores elijan cada uno un objeto distinto), se juega otra vez._
 
+## Podés ver el proyecto [aquí](laubg.github.io/piedra-papel-o-tijera/)
+
+
 ## Comenzando 🚀
 _Para poder descargar éste proyecto será suficiente con clonar el mismo en una carpeta local y abrirlo con VSC y LiveServer._
 
