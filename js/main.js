@@ -40,10 +40,39 @@ const comenzar = document.getElementById("comenzar");
 
 
 
-function IniciarJuego (){
+function crearJuego (){
     // muestra el tipo de evento, el elemento y las coordenadas del click
-    alert(event.type + " en el " + event.currentTarget);
-    alert("Coordenadas: " + event.clientX + ":" + event.clientY);
+
+
+    comenzar.innerHTML = `<h3> Elije una opción:</h3><br>
+    <div class="iconos">
+        <button type="button" class="icono"> <img src="assets/img/piedra.png" alt="ícono piedra" height="80" /></button>
+        <button type="button" class="icono"> <img src="assets/img/papel.png" alt="ícono papel"height="80" /></button>
+        <button type="button" class="icono"> <img src="assets/img/tijera.png" alt="ícono tijera" height="80" /></button>
+
+    </div>
+    <div class="eleccion">
+        <div>
+            <h4>Tú elección fue:</h4>
+            <img src="assets/img/roca-amar.png" alt="ícono piedra" height="79">  
+        </div>
+        <div>
+            <h4>La elección de Garrita fue:</h4>
+            <img src="assets/img/papelverd.png" alt="ícono mano gato con forma de tijera " height="80">  
+        </div>
+        
+        <p> ¡El ganador de ésta partida es:</p>
+    </div>
+</div>
+<div class="puntos">
+    <h3> Tú=  puntos</h3>
+    <h3> Garrita= puntos</h3>
+    <h2> El ganador es...</h2>
+
+</div>
+<div>
+    <button> Reiniciar</button>
+</div>`
   };
 
   

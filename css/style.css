@@ -100,6 +100,16 @@ input{
     height: 25px;
     border-radius: 7px;
 }
+
+.icono{
+    color:#f5f1f1;
+    background-color: #8f20d2;
+    border-radius: 50px;
+    border-color: #d4f3e9;
+    padding: 6px;
+    margin: 8px;
+    height: 103px;;
+}
 .reglas{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
