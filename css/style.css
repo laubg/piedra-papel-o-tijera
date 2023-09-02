@@ -111,8 +111,8 @@ input{
 h2{
     padding: 21px;
 }
-.saludo{
-    margin: 6px;
+#saludo{
+    margin: 25px 16px 0px;
 }
 
 /* .button{} */
