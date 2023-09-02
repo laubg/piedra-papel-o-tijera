@@ -1,6 +1,8 @@
 // 1)input para recibir el nombre,debe cargar ése nombre en una variable y luego:
 // - generar texto con ése nombre + el resto de la información, 
 
+
+// <--------Pedir nombre a usuario y darle la bienvenida----->
 let nombre;
 const input = document.querySelector("input");
 const saludo = document.getElementById("saludo");
@@ -21,7 +23,7 @@ function saludarUsuario(e) {
         </p></div>
         <div class="opciones">
             <h2 class="comenzar"> ¿Empezamos?</h2><br>
-            <button  id="IniciarJuego" onclick="saludarUsuario(this)">Iniciar juego</button>
+            <button  id="IniciarJuego" onclick="crearJuego(this)">Iniciar juego</button>
             `
         nombre=e.target.value;
         
@@ -32,11 +34,24 @@ function saludarUsuario(e) {
     
 }
 
-console.log(nombre)
-crearJuego= 
+// <--------Crear página de juego----->
+
+const comenzar = document.getElementById("comenzar");
+
+
+
+function IniciarJuego (){
+    // muestra el tipo de evento, el elemento y las coordenadas del click
+    alert(event.type + " en el " + event.currentTarget);
+    alert("Coordenadas: " + event.clientX + ":" + event.clientY);
+  };
+
+  
 function jugar(){
 
 }
+
+
 // - también cargar el nombre del Jugador en la tabla de resultados y en un recuadro que informe cómo termina el juego.-decidí no hacer esto porque no logré guardar el nombre en una variable-
 // 2) botones que registren elección del jugador, al hacerlo deben:
 // -desencadenar la elección al azar de la pc y mostrarla en texto

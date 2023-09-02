@@ -106,9 +106,13 @@ input{
     backdrop-filter: blur(3.4px); 
     padding: 17px 17px 20px 17px;
     background-color: #aadddd2b;
+    margin: 6px;
 }
 h2{
     padding: 21px;
+}
+.saludo{
+    margin: 6px;
 }
 
 /* .button{} */
