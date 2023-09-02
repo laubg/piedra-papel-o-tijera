@@ -19,21 +19,20 @@
             <h2 class="padding-texto">
                 Dinos tu nombre por favor...
             </h2>
-            <input class="padding-texto">
-            <h2 class="padding-texto">Jugarás con Garrita🐱, y es un michi al que le encanta ganar, así que prestá mucha atención!.</h2>
-            <h3> Recuerda que:</h3><br>
-            <p class="reglas">
-                ⚡ Cada partida tiene 5 intentos, gana quién gane 3 o más intentos.<br>
-                ⚡ Piedra (💎) gana a tijera (✂️).<br>
-                ⚡ Papel (📜) gana a piedra (💎).<br>
-                ⚡ Tijera (✂️) gana a papel (📜).<br>
-            </p>
-        </div>
+            <label for="nombreJugador"></label>
+            <input class="padding-texto"   type="text" id="nombre" placeholder="  Ingresá tu nombre aquí"  maxlength="15" >
+            <!-- <div>
+                <button onclick="saludarUsuario()" id="IniciarJuego">Iniciar juego</button>
+            </div> -->
+            <div id="saludo"></div>
+            
+        <!-- </div>
         <div class="opciones">
             <h2 class="comenzar"> ¿Empezamos?</h2><br>
+            
             <h3> Elije una opción:</h3><br>
             <div class="iconos">
-                <button type="button"> <img src="assets/img/piedra.png" alt="ícono piedra" height="80" /></button>
+                <button type="button"> <img src="assets/img/piedra.png" alt="ícono piedra" c /></button>
                 <button type="button"> <img src="assets/img/papel.png" alt="ícono papel"height="80" /></button>
                 <button type="button"> <img src="assets/img/tijera.png" alt="ícono tijera" height="80" /></button>
 
@@ -59,7 +58,7 @@
         </div>
         <div>
             <button> Reiniciar</button>
-        </div>
+        </div> -->
             
 </main>
 <script src="js/main.js"></script>  

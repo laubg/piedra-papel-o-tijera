@@ -94,6 +94,11 @@ button{
     padding: 6px;
     margin: 4px;
 }
+input{
+    color:#4c2a9b;
+    height: 25px;
+    border-radius: 7px;
+}
 .reglas{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

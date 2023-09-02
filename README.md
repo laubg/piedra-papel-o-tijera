@@ -1,5 +1,5 @@
 # Piedra, papel o tijera
-_Es un juego de manos que se utiliza con mucha frecuencia para decidir quién de dos personas hará algo. En éste caso presentamos una versión online para poder jugarlo cuando no tengas un oponente digno 😉._
+_Es un juego de manos que se utiliza con mucha frecuencia para decidir quién de dos personas hará algo. En éste caso presentamos una versión online para poder jugarlo cuando no tengas un oponente digno_ 😉.
 
 _El objetivo es vencer al oponente seleccionando el arma que gana, según las siguientes reglas:_
 
@@ -28,7 +28,7 @@ _ganador._
 
 ## Proceso de creación 🖍️
 _Diseño:_
-1. _ordené los elementos y estructura en papel😅._
+1. _ordené los elementos y estructura en papel._
 2. _busqué la imágenes que podrían servirme y a partir de ellas elegí los colores._
 
 _Programación:_
@@ -41,12 +41,18 @@ _Programación:_
     2. _crear botones que registren elección del jugador, al hacerlo deben:_
         * _desencadenar la elección al azar de la pc y mostrarla en texto._
         * _comparar ambas elecciones y determinar el ganador de la ronda  y también mostrarla en el texto._
-        * _ir cargando los resueltados en una tabla que se muestre al final._
+        * _ir cargando los resultados en una tabla que se muestre al final._
         * _contar los intentos y verificar si alguno tuvo 3 victorias._
     3. _crear botón de reinicio._
 
 
 ## Soluciones/inconvenientes al programar la funcionalidad📌 
+
+## Material consultado📌 
+* [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
+* [https://es.javascript.info/introduction-browser-events](https://es.javascript.info/introduction-browser-events)
+* [https://es.javascript.info/events-change-input](https://es.javascript.info/events-change-input)
+
 
 
 ## Imágenes utilizadas🎨 
