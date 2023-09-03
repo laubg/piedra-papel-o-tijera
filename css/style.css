@@ -126,7 +126,14 @@ h2{
 #saludo{
     margin: 46px 16px 0px;
 }
-
+#comenzar{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
 /* .button{} */
 
 
