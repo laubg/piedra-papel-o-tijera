@@ -19,3 +19,15 @@ h1{
     color:#08d0ffeb;
 
 }
+
+/* Responsive -----------------------------------------------------*/
+@media (max-width: 506px){
+
+    h1{
+        font-size: 7vh;
+        padding: 56px;
+    }
+    .comenzar {
+        font-size: 6vh;
+    }
+} 
