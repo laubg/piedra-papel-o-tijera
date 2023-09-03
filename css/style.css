@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding:0;
+    /* padding:0; */
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color:#fafafade;
@@ -99,6 +99,7 @@ input{
     color:#4c2a9b;
     height: 25px;
     border-radius: 7px;
+    padding:3px
 }
 
 .icono{
@@ -123,7 +124,25 @@ h2{
     padding: 21px;
 }
 #saludo{
-    margin: 25px 16px 0px;
+    margin: 46px 16px 0px;
 }
 
 /* .button{} */
+@media (max-width: 506px){
+    #saludo{
+        margin:46px;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+    h1{
+        font-size: 7vh;
+    }
+    .comenzar {
+        font-size: 6vh;
+    }
+}  

@@ -14,7 +14,7 @@ function saludarUsuario(e) {
     
         saludo.innerHTML = `<h3>"¡Hola ` + e.target.value + `!"</h3>
         <h3 class="padding-texto">Jugarás con Garrita🐱, y es un michi al que le encanta ganar, así que prestá mucha atención!.</h3>
-        <h3> Recordá que:</h3><br>
+        <br><h3> Recordá que:</h3><br>
         <p class="reglas">
             ⚡ Cada partida tiene 5 rondas, gana quién gane más rondas.<br>
             ⚡ Piedra (💎) gana a tijera (✂️).<br>
@@ -23,7 +23,7 @@ function saludarUsuario(e) {
         </p></div>
         <div class="opciones">
             <h2 class="comenzar"> ¿Empezamos?</h2><br>
-            <button  id="IniciarJuego" onclick="crearJuego(this)">Iniciar juego</button>
+            <button  id="IniciarJuego" onclick="crearJuego()">Iniciar juego</button>
             `
         nombre=e.target.value;
         
