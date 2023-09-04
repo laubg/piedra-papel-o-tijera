@@ -91,7 +91,7 @@ button{
     background-color: #8f20d2;
     border-radius: 18px;
     border-color: #d4f3e9;
-    padding: 6px;
+    padding: 13px;
     margin: 4px;
     height: 45px;
 }
@@ -192,4 +192,17 @@ h2{
   }
   .eleccU{
     margin: 27px;
+  }
+  #resultadoJuego{
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(241 231 237 / 69%);
+    backdrop-filter: blur(3.4px); 
+    padding: 17px 17px 20px 17px;
+    background-color: #aadddd2b;
+    margin: 6px;
+  }
+  .reset{
+    padding: 6px;
+    margin:6px;
   }

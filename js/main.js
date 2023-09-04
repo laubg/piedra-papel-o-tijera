@@ -3,6 +3,12 @@
 
 let seleccionUs;
 let seleccionPc;
+let numeroRondas= 1;
+let jugadasGanadasUsuario= 0;
+let jugadasGanadasPc= 0;
+let rondasEmpatadas= 0;
+
+
 // <--------Pedir nombre a usuario y darle la bienvenida----->
 let nombre="";
 const input = document.querySelector("input");
@@ -18,14 +24,14 @@ function saludarUsuario(e) {
         <h3 class="padding-texto">Jugarás con Garrita🐱, y es un michi al que le encanta ganar, así que prestá mucha atención!.</h3>
         <br><h3> Recordá que:</h3><br>
         <p class="reglas">
-            ⚡ Cada partida tiene 5 rondas, gana quién gane más rondas.<br>
+            🔷 Cada partida tiene 5 rondas, gana quién gane más rondas.<br>
             ⚡ Piedra (💎) gana a tijera (✂️).<br>
             ⚡ Papel (📜) gana a piedra (💎).<br>
             ⚡ Tijera (✂️) gana a papel (📜).<br>
         </p></div>
         <div class="opciones">
             <h2 class="comenzar"> ¿Empezamos?</h2><br>
-            <button  id="IniciarJuego" onclick="crearJuego()">Iniciar juego</button>
+            <button  id="IniciarJuego" onclick="crearJuego()" style="display:block;">Iniciar juego</button>
             `
         nombre =document.querySelector("input").value;
         console.log(nombre)
@@ -37,7 +43,6 @@ function saludarUsuario(e) {
     
 }
 
-console.log(nombre)
 // <--------Crear página de juego----->
 
 const comenzar = document.getElementById("comenzar");
@@ -45,7 +50,10 @@ const comenzar = document.getElementById("comenzar");
 
 
 function crearJuego (){
-
+    // <--------Ocultar botón de Inicio de jugada----->
+    const botonInicio= document.getElementById("IniciarJuego")
+    botonInicio.style.display = 'none';
+    // <--------Imprimir botones para que usuario elija ----->
     comenzar.innerHTML = `<h3> Elije una opción:</h3><br>
     <div class="iconos" id="eleccionUsuario">
         
@@ -66,57 +74,57 @@ function crearJuego (){
     <div id="resultadoUsuario"></div> 
     <div id="resultadoPc"></div> 
     <div id="resultadoRonda"></div> 
+    <div id="resultadoJuego" style="display:none;"></div>
     
 </div>
-<div class="puntos">
-    <h3> Tú=  puntos</h3>
-    <h3> Garrita= puntos</h3>
-    <h2> El ganador es...</h2>
 
-</div>
-<div>
+<div class="reset" id="reset" style="display:none;">
     <button> Reiniciar</button>
 </div>`
   };
 
 // <-------------Jugar: tendrá 4 pasos------------------>  
 
-function jugar(){
 
-}
 // <--------Paso 1:Capturar la elección del usuario-----> 
 
 
 
 
 function obtenerJugadaUsuario(){
-let opcion = document.querySelector('input[name="eleccion"]:checked')
-// console.log(opcion)
-// alert(opcion.value);
-seleccionUs= opcion.value;
-// console.log(seleccionado)
-const eleccUsuario= document.getElementById("resultadoUsuario")
+    // <--------Determinar elección de usuario----->
+    let opcion = document.querySelector('input[name="eleccion"]:checked')
+    seleccionUs= opcion.value;
 
+    const eleccUsuario= document.getElementById("resultadoUsuario")
 
-if (seleccionUs==0) {
+    // <--------Imprimir elección de usuario----->
+
+    if (seleccionUs==0) {    
     eleccUsuario.innerHTML = `
+            <div class="eleccU">
+                <h4>Los resultados de la ronda ${numeroRondas} son:</h4><br>
+                <h4>😏 Tú elección fue: Piedra</h4> 
+            </div>`
+    } else if(seleccionUs==1){
+            eleccUsuario.innerHTML = `
+            <div class="eleccU">
+                <h4>Los resultados de la ronda ${numeroRondas} son:</h4><br>
+                <h4>😏 Tú elección fue: Papel</h4> 
+            </div>`
+    }else {
+        eleccUsuario.innerHTML = `
         <div class="eleccU">
-            <h4>😏 Tú elección fue: Piedra</h4> 
+            <h4>Los resultados de la ronda ${numeroRondas} son:</h4><br>
+            <h4>😏 Tú elección fue: Tijera</h4> 
         </div>`
-} else if(seleccionUs==1){
-    eleccUsuario.innerHTML = `
-    <div class="eleccU">
-        <h4>😏 Tú elección fue: Papel</h4> 
-    </div>`
-}else {
-    eleccUsuario.innerHTML = `
-    <div class="eleccU">
-        <h4>😏 Tú elección fue: Tijera</h4> 
-    </div>`
 
-}
+    }
 obtenerJugadaPC()
 detGanadorRonda()
+numeroRondas++
+determinarGanador()
+
 } 
 
 
@@ -126,51 +134,120 @@ detGanadorRonda()
 // obtenerJugadaPC();
 // console.log(obtenerJugadaPC())
 function obtenerJugadaPC() {
+    // <--------Determinar elección de Pc----->
     seleccionPc= Math.floor(Math.random() * 3);
     const eleccPc= document.getElementById("resultadoPc")
 
-
-if (seleccionPc==0) {
-    eleccPc.innerHTML = `
+    // <--------Imprimir elección de Pc----->
+    if (seleccionPc==0) {
+        eleccPc.innerHTML = `
+            <div class="eleccU">
+                <h4>😺 La elección de Garrita fue: Piedra</h4> 
+            </div>`
+    } else if(seleccionPc==1){
+        eleccPc.innerHTML = `
         <div class="eleccU">
-            <h4>😺 La elección de Garrita fue: Piedra</h4> 
+            <h4>😺 La elección de Garrita fue: Papel</h4> 
         </div>`
-} else if(seleccionPc==1){
-    eleccPc.innerHTML = `
-    <div class="eleccU">
-        <h4>😺 La elección de Garrita fue: Papel</h4> 
-    </div>`
-}else {
-    eleccPc.innerHTML = `
-    <div class="eleccU">
-        <h4>😺 La elección de Garrita fue: Tijera</h4> 
-    </div>`
-
+    }else {
+        eleccPc.innerHTML = `
+        <div class="eleccU">
+                <h4>😺 La elección de Garrita fue: Tijera</h4> 
+            </div>`
+    
+    }
 }
-  }
+
 // <---------Paso 3:Comparar ambos valores y determinar el ganador de cada ronda------->
 function detGanadorRonda(){
     const resRonda= document.getElementById("resultadoRonda")
-    
+    // <--------Imprimir ganador de la ronda----->
     if ((seleccionUs==0 & seleccionPc==0)||(seleccionUs==1 & seleccionPc==1)||(seleccionUs==2 & seleccionPc==2)){
         resRonda.innerHTML = `
         <div class="eleccU">
             <h4>🏅 El resutado de la ronda fue: Empate</h4> 
         </div>`
+        rondasEmpatadas++;
+        console.log("rondasEmpatadas"+rondasEmpatadas);
     }else if((seleccionUs==0 & seleccionPc==2)||(seleccionUs==1 & seleccionPc==0)||(seleccionUs==2 & seleccionPc==1)){
         resRonda.innerHTML = `
         <div class="eleccU">
             <h4>🏅 El resutado de la ronda fue: ¡Ganaste ésta ronda!</h4> 
         </div>`
+        jugadasGanadasUsuario++;
+        console.log("jugadasGanadasUsuario"+jugadasGanadasUsuario);
+        
     }else{
         resRonda.innerHTML = `
         <div class="eleccU">
             <h4>🏅El resutado de la ronda fue: ¡Garrita ganó ésta ronda!</h4> 
         </div>`
+        jugadasGanadasPc++;
+        console.log("jugadasGanadasPc"+jugadasGanadasPc);
     }
+    console.log(numeroRondas)
 } 
 // <---------Paso 4:Contar rondas y determinar el ganador del juego-------> 
 
+function determinarGanador(){
+    // numeroRondas
+    if (numeroRondas==5){
+        // <--------Mostrar el resultado de la jugada con sus estilos----->
+        const resultJuego= document.getElementById("resultadoJuego")
+        resultJuego.style.display = 'block';
+
+        // <--------Imprimir resultado del juego----->
+
+        if (jugadasGanadasPc>jugadasGanadasUsuario){
+            resultJuego.innerHTML = `
+            <div class="eleccU">
+                <h4>📢 El resutado del juego fue: ¡👑Garrita ganó el juego!</h4> 
+            </div>`
+    
+        }else if(jugadasGanadasPc<jugadasGanadasUsuario){
+            resultJuego.innerHTML = `
+            <div class="eleccU">
+                <h4>📢 El resutado del juego fue: ¡👑Ganaste el juego ${nombre}!</h4> 
+            </div>`
+    
+        }else{
+            resultJuego.innerHTML = `
+            <div class="eleccU">
+                <h4>📢 El resutado del juego fue: Empate😞</h4> 
+            </div>`
+    
+        }
+
+        // <--------Mostrar el botón de reinicio----->
+        const reiniciar= document.getElementById("reset")
+        reiniciar.style.display = 'block';
+
+
+
+    }else if(numeroRondas>5){
+        // <--------Deshabilitar botón de elegir----->
+        const btnElegir = document.getElementById("mostrar");
+        btnElegir.disabled = true;
+
+        // <--------Mostrar el botón de reinicio----->
+        const reiniciar= document.getElementById("reset")
+        reiniciar.style.display = 'block';
+
+    }else{
+        // <--------Mostrar el botón de reinicio----->
+        const reiniciar= document.getElementById("reset")
+        reiniciar.style.display = 'block';
+
+
+    }
+
+    //     // <--------Mostrar el botón de reinicio----->
+    // consk';t reiniciar= document.getElementById("reset")
+    // reiniciar.style.display = 'bloc
+
+    
+
+}
 // <-------------Reset Jugada------------------> 
 
 // - también cargar el nombre del Jugador en la tabla de resultados y en un recuadro que informe cómo termina el juego.-decidí no hacer esto porque no logré guardar el nombre en una variable-

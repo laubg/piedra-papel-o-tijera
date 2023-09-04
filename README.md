@@ -53,6 +53,9 @@ _Programación:_
 * [https://es.javascript.info/introduction-browser-events](https://es.javascript.info/introduction-browser-events)
 * [https://es.javascript.info/events-change-input](https://es.javascript.info/events-change-input)
 * [https://es.stackoverflow.com/questions/139871/como-usar-botones-en-formulario-html-para-elegir-entre-varias-opciones](https://es.stackoverflow.com/questions/139871/como-usar-botones-en-formulario-html-para-elegir-entre-varias-opciones)
+* [https://cybmeta.com/display-none-vs-visibility-hidden-y-tu-como-escondes-las-cosas](https://cybmeta.com/display-none-vs-visibility-hidden-y-tu-como-escondes-las-cosas)
+* [https://www.jose-aguilar.com/blog/display-content-javascript/](https://www.jose-aguilar.com/blog/display-content-javascript/)
+* [https://es.stackoverflow.com/questions/17783/cómo-obtener-el-valor-de-radio-button-en-javascript#:~:text=Puedes%20seleccionar%20directamente%20el%20radio%20seleccionado%20por%20medio%20de%20la%20propiedad%20checked%20.&text=Esto%20te%20devolverá%20el%20valor%20del%20radio%20button%20que%20esté%20seleccionado.](https://es.stackoverflow.com/questions/17783/cómo-obtener-el-valor-de-radio-button-en-javascript#:~:text=Puedes%20seleccionar%20directamente%20el%20radio%20seleccionado%20por%20medio%20de%20la%20propiedad%20checked%20.&text=Esto%20te%20devolverá%20el%20valor%20del%20radio%20button%20que%20esté%20seleccionado.)
 
 
 ## Imágenes utilizadas🎨 
