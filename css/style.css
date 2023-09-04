@@ -95,6 +95,9 @@ button{
     margin: 4px;
     height: 45px;
 }
+button:hover{
+    transform: scale(1.1)
+}
 input{
     color:#4c2a9b;
     height: 25px;
@@ -175,6 +178,7 @@ h2{
   .eleccionUs:hover{
     background: #08d0ffeb;
     color: white;
+    transform: scale(1.1)
   }
   .icono:checked + label{
     background: #8f20d2;
