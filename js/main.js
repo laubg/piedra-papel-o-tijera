@@ -1,6 +1,3 @@
-// 1)input para recibir el nombre,debe cargar ése nombre en una variable y luego:
-// - generar texto con ése nombre + el resto de la información, 
-
 let seleccionUs;
 let seleccionPc;
 let numeroRondas= 1;
@@ -9,9 +6,7 @@ let jugadasGanadasPc= 0;
 let rondasEmpatadas= 0;
 
 
-// const eleccUsuario= document.getElementById("resultadoUsuario")
-// const eleccPc= document.getElementById("resultadoPc")
-// const resRonda= document.getElementById("resultadoRonda")
+
 
 // <--------Pedir nombre a usuario y darle la bienvenida----->
 let nombre="";
@@ -51,8 +46,6 @@ function saludarUsuario(e) {
 
 const comenzar = document.getElementById("comenzar");
 
-
-
 function crearJuego (){
     // <--------Ocultar botón de Inicio de jugada----->
     botonInicio= document.getElementById("IniciarJuego");
@@ -91,9 +84,6 @@ function crearJuego (){
 
 
 // <--------Paso 1:Capturar la elección del usuario-----> 
-
-
-
 
 function obtenerJugadaUsuario(){
     // <--------Determinar elección de usuario----->
@@ -191,14 +181,15 @@ function detGanadorRonda(){
     }
     console.log(numeroRondas)
 } 
+
+
 // <---------Paso 4:Contar rondas y determinar el ganador del juego-------> 
 
 function determinarGanador(){
-    // numeroRondas
-    
+    // numeroRondas    
 
     if (numeroRondas>5){
-        // <--------Ocultar los resultados de las jugadas----->
+        // <--------Ocultar los resultados de las jugadas (no pude)----->
         // resRonda.style.display = 'none';
         // eleccPc.style.display = 'none';
         // eleccUsuario.style.display = 'none';
@@ -240,14 +231,7 @@ function determinarGanador(){
 
 
 
-    // }else if(numeroRondas>5){
-    //     // <--------Deshabilitar botón de elegir----->
-    //     const btnElegir = document.getElementById("mostrar");
-    //     btnElegir.disabled = true;
 
-    //     // <--------Mostrar el botón de reinicio----->
-    //     const reiniciar= document.getElementById("reset")
-    //     reiniciar.style.display = 'block';
 
     }else{
         // <--------Mostrar el botón de reinicio----->
@@ -256,12 +240,6 @@ function determinarGanador(){
 
 
     }
-
-    //     // <--------Mostrar el botón de reinicio----->
-    // consk';t reiniciar= document.getElementById("reset")
-    // reiniciar.style.display = 'bloc
-
-    
 
 }
 
@@ -284,18 +262,6 @@ function reiniciar(){
     document.getElementById("resultadoRonda").innerHTML = "";
     document.getElementById("resultadoJuego").innerHTML = "";
 
-    // <button id="mostrar" onclick="obtenerJugadaUsuario()">Elegir</button
-    // </div> 
-    // <div id="resultadoUsuario"></div> 
-    // <div id="resultadoPc"></div> 
-    // <div id="resultadoRonda"></div> 
-    // <div id="resultadoJuego" style="display:none;"></div>
+ 
 }
 
-// - también cargar el nombre del Jugador en la tabla de resultados y en un recuadro que informe cómo termina el juego.-decidí no hacer esto porque no logré guardar el nombre en una variable-
-// 2) botones que registren elección del jugador, al hacerlo deben:
-// -desencadenar la elección al azar de la pc y mostrarla en texto
-// -comparar ambas elecciones y determinar el ganador de la ronda  y también mostrarla en el texto
-// -ir cargando los resueltados en una tabla que se muestre al final
-// -contar los intentos y verificar si alguno tuvo 3 victorias.
-// 3) crear botón de reinicio

@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    /* padding:0; */
+    padding:0; 
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color:#fafafade;
@@ -8,14 +8,6 @@
 
 body{
     background-color:#4c2a9b;
-    /* background-image:url(../assets/img/fondo.jpg);
-    background-repeat : no-repeat;
-    background-size : cover;
-    background-origin: border-box;
-    display: flex;
-    margin: 15vh;
-    justify-content: center; 
-    align-items: center; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,22 +17,18 @@ body{
 
 }
 
+h2{
+    padding: 21px;
+}
+
 .cuadrobase{
-    /* background-color:#e9a3cda1; */
-    /* width:90vw;
-    height:90vh; */
     margin: 15vh 5vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    justify-content: center;
-    /* border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(241 231 237 / 69%);
-    backdrop-filter: blur(3.4px);  */
-    
+    justify-content: center; 
 }
 
 .intro{
@@ -82,9 +70,7 @@ body{
     align-items: center;
 
 }
-/* img{
-    height:27vh;
-} */
+
 
 button{
     color:#f5f1f1;
@@ -123,9 +109,7 @@ input{
     background-color: #aadddd2b;
     margin: 6px;
 }
-h2{
-    padding: 21px;
-}
+
 #saludo{
     margin: 46px 16px 0px;
 }
@@ -137,7 +121,7 @@ h2{
     justify-content: center;
     align-items: center;
 }
-/* .button{} */
+
 
 
 
@@ -190,6 +174,9 @@ h2{
   .icono{
     display: none;
   }
+
+
+  
   .resultados{
     display: flex;
     flex-direction: column;
