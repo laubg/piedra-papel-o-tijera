@@ -204,19 +204,22 @@ function determinarGanador(){
         if (jugadasGanadasPc>jugadasGanadasUsuario){
             resultJuego.innerHTML = `
             <div class="eleccU">
-                <h4>📢 El resutado del juego es: ¡👑Garrita ganó el juego!</h4> 
+                <h4>📢 El resutado del juego es: ¡👑Garrita ganó el juego!</h4>
+                <a href="https://www.animatedimages.org/cat-cats-209.htm"><img src="https://www.animatedimages.org/data/media/209/animated-cat-image-0043.gif" border="0" alt="animated-cat-image-0043" /></a>
             </div>`
     
         }else if(jugadasGanadasPc<jugadasGanadasUsuario){
             resultJuego.innerHTML = `
             <div class="eleccU">
-                <h4>📢 El resutado del juego es: ¡👑Ganaste el juego ${nombre}!</h4> 
+                <h4>📢 El resutado del juego es: ¡👑Ganaste el juego ${nombre}!</h4>
+                <a href="https://www.animatedimages.org/cat-cats-209.htm"><img src="https://www.animatedimages.org/data/media/209/animated-cat-image-0043.gif" border="0" alt="animated-cat-image-0043" /></a> 
             </div>`
     
         }else{
             resultJuego.innerHTML = `
             <div class="eleccU">
-                <h4>📢 El resutado del juego es: Empate😞</h4> 
+                <h4>📢 El resutado del juego es: Empate😞</h4>
+                <a href="https://www.animatedimages.org/cat-cats-209.htm"><img src="https://www.animatedimages.org/data/media/209/animated-cat-image-0043.gif" border="0" alt="animated-cat-image-0043" /></a> 
             </div>`
     
         }
