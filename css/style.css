@@ -153,6 +153,9 @@ h2{
     button{
         font-size: 15px;
     }
+    .resultados{
+        margin: 51px;
+    }
 
 }  
 
@@ -191,7 +194,7 @@ h2{
     justify-content: center;
   }
   .eleccU{
-    margin: 27px;
+    margin: 11px;
   }
   #resultadoJuego{
     border-radius: 16px;
