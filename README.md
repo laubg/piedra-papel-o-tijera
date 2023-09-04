@@ -47,14 +47,14 @@ _Programación:_
 
 
 ## Soluciones/inconvenientes y cambios al programar la funcionalidad📌 
-_1. decidí no colocar un botón para ingresar el nombre del usuario para no tener tantos botones_
-_2. me costó bastante decidir cómo realizar los botones para tomar la elección del usuario (me sirvió una respuesta de stackoverflow para saber cómo hacerlo con botones de tipo radio)y, luego de eso, hacerlos funcionar, 1ro quería capturar el valor con un evento "change" y no pude hacerlo sin agregar un botón, luego constantemente me decía que el valor era "undefined" y el error fue que seguía pretendiendo usar el evento de tipo "change" para capturar el valor y, en realidad, esto no era necesario, eso me demoró muchísimo tiempo y, al final, ¡era tan simple!🙈, el código final que si funcionó fue:_
+1. _decidí no colocar un botón para ingresar el nombre del usuario para no tener tantos botones_
+2. _me costó bastante decidir cómo realizar los botones para tomar la elección del usuario (me sirvió una respuesta de stackoverflow para saber cómo hacerlo con botones de tipo radio)y, luego de eso, hacerlos funcionar, 1ro quería capturar el valor con un evento "change" y no pude hacerlo sin agregar un botón, luego constantemente me decía que el valor era "undefined" y el error fue que seguía pretendiendo usar el evento de tipo "change" para capturar el valor y, en realidad, esto ya no era necesario, eso me demoró muchísimo tiempo y, al final, ¡era tan simple!🙈, el código final que si funcionó fue:_
 ```Js
     let opcion = document.querySelector('input[name="eleccion"]:checked');
     seleccionUs= opcion.value;
 ```
-_3. en un principio decidí hacer una tabla con los resultados de todas las rondas y terminé mostrando los resultados de cada ronda al momento de realizarla y sólo el resultado final(sin la suma de todos los puntos en una tabla)._
-_4. en relación a la cantidad de intentos solitados en la consigna (5) al tomar en cuenta los empates me dí cuenta de que no podía tomar cómo ganador a quién tuviera 3 puntos o más, sino a quién tuviera más puntos, así que esto es lo que decidí hacer._
+3. _en un principio decidí hacer una tabla con los resultados de todas las rondas y terminé mostrando los resultados de cada ronda al momento de realizarla y sólo el resultado final   (sin la suma de todos los puntos en una tabla)._
+4. _en relación a la cantidad de intentos solicitados en la consigna (5) al tomar en cuenta los empates me dí cuenta de que no podía tomar cómo ganador a quién tuviera 3 puntos o más, sino a quién tuviera más puntos, así que esto es lo que decidí hacer._
 
 ## Material consultado📌 
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -73,7 +73,7 @@ _4. en relación a la cantidad de intentos solitados en la consigna (5) al tomar
 * [Ícono mano abierta](https://icons8.com/icon/r1fIazL68F71/toda-la-mano)
 * [Ícono mano en tijera](https://icons8.com/icon/wBE8VeHXQ79v/tijeras-de-mano)
 * [Ícono general](https://www.freepik.com/icon/rock-paper-scissors_6729598#fromView=search&term=gato++mano%2B+piedra+papel+tijera+%2B+fondo+azul&page=2&position=91)
-* [Patitas de gato (modificadas)](https://es.pngtree.com/freepng/cute-cat-paws-icon_7495977.html)
 
 
-⌨️ con ❤️ por [Laura Bautista](https://github.com/laubg) 😊
+
+Realizado con ❤️ por [Laura Bautista](https://github.com/laubg) 😊
