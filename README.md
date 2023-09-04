@@ -3,10 +3,10 @@ _Es un juego de manos que se utiliza con mucha frecuencia para decidir quién de
 
 _El objetivo es vencer al oponente seleccionando el arma que gana, según las siguientes reglas:_
 
-_*La piedra aplasta la tijera. (Gana la piedra.)_
-_*La tijera corta el papel. (Gana la tijera.)_
-_*El papel envuelve la piedra. (Gana el papel.)_
-_*En caso de empate (que dos jugadores elijan el mismo elemento o que tres jugadores elijan cada uno un objeto distinto), se juega otra vez._
+* _La piedra aplasta la tijera. (Gana la piedra.)_
+* _La tijera corta el papel. (Gana la tijera.)_
+* _El papel envuelve la piedra. (Gana el papel.)_
+* _En caso de empate (que dos jugadores elijan el mismo elemento o que tres jugadores elijan cada uno un objeto distinto), se juega otra vez._
 
 ## Podés ver el proyecto [aquí](laubg.github.io/piedra-papel-o-tijera/)
 
@@ -54,6 +54,7 @@ _2. me costó bastante decidir cómo realizar los botones para tomar la elecció
     seleccionUs= opcion.value;
 ```
 _3. en un principio decidí hacer una tabla con los resultados de todas las rondas y terminé mostrando los resultados de cada ronda al momento de realizarla y sólo el resultado final(sin la suma de todos los puntos en una tabla)._
+_4. en relación a la cantidad de intentos solitados en la consigna (5) al tomar en cuenta los empates me dí cuenta de que no podía tomar cómo ganador a quién tuviera 3 puntos o más, sino a quién tuviera más puntos, así que esto es lo que decidí hacer._
 
 ## Material consultado📌 
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
