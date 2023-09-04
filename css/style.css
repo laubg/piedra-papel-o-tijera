@@ -155,3 +155,41 @@ h2{
     }
 
 }  
+
+/* Botones elección prueba*/
+.iconos{
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .iconos .eleccionUs{
+    padding: 6px;
+    border-radius: 50px;
+    border: 2px solid #ccc;
+    margin: 6px;
+    display:flex;
+  }
+  .eleccionUs:hover{
+    background: #08d0ffeb;
+    color: white;
+  }
+  .icono:checked + label{
+    background: #8f20d2;
+    color: white;
+    border: 2px solid #08d0ffeb;
+  }
+
+  
+  .icono{
+    display: none;
+  }
+  .resultados{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .eleccU{
+    margin: 27px;
+  }

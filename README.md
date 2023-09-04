@@ -52,7 +52,7 @@ _Programación:_
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
 * [https://es.javascript.info/introduction-browser-events](https://es.javascript.info/introduction-browser-events)
 * [https://es.javascript.info/events-change-input](https://es.javascript.info/events-change-input)
-
+* [https://es.stackoverflow.com/questions/139871/como-usar-botones-en-formulario-html-para-elegir-entre-varias-opciones](https://es.stackoverflow.com/questions/139871/como-usar-botones-en-formulario-html-para-elegir-entre-varias-opciones)
 
 
 ## Imágenes utilizadas🎨 
