@@ -83,7 +83,7 @@ function crearJuego (){
 </div>
 
 <div class="reset" id="reset" style="display:none;">
-    <button> Reiniciar</button>
+    <button onclick="reiniciar()"> Reiniciar</button>
 </div>`
   };
 
@@ -266,6 +266,31 @@ function determinarGanador(){
 }
 
 // <-------------Reset Jugada------------------> 
+function reiniciar(){
+
+    numeroRondas= 1;
+    jugadasGanadasUsuario= 0;
+    jugadasGanadasPc= 0;
+    rondasEmpatadas= 0;
+    nombre="";
+
+
+
+    document.getElementById("saludo").innerHTML = "";
+    document.getElementById("nombre").value = "";
+    document.getElementById("comenzar").innerHTML = "";
+    document.getElementById("resultadoUsuario").innerHTML = "";
+    document.getElementById("resultadoPc").innerHTML = "";
+    document.getElementById("resultadoRonda").innerHTML = "";
+    document.getElementById("resultadoJuego").innerHTML = "";
+
+    // <button id="mostrar" onclick="obtenerJugadaUsuario()">Elegir</button
+    // </div> 
+    // <div id="resultadoUsuario"></div> 
+    // <div id="resultadoPc"></div> 
+    // <div id="resultadoRonda"></div> 
+    // <div id="resultadoJuego" style="display:none;"></div>
+}
 
 // - también cargar el nombre del Jugador en la tabla de resultados y en un recuadro que informe cómo termina el juego.-decidí no hacer esto porque no logré guardar el nombre en una variable-
 // 2) botones que registren elección del jugador, al hacerlo deben:

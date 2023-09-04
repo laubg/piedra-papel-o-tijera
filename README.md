@@ -46,7 +46,14 @@ _Programación:_
     3. _crear botón de reinicio._
 
 
-## Soluciones/inconvenientes al programar la funcionalidad📌 
+## Soluciones/inconvenientes y cambios al programar la funcionalidad📌 
+_1. decidí no colocar un botón para ingresar el nombre del usuario para no tener tantos botones_
+_2. me costó bastante decidir cómo realizar los botones para tomar la elección del usuario (me sirvió una respuesta de stackoverflow para saber cómo hacerlo con botones de tipo radio)y, luego de eso, hacerlos funcionar, 1ro quería capturar el valor con un evento "change" y no pude hacerlo sin agregar un botón, luego constantemente me decía que el valor era "undefined" y el error fue que seguía pretendiendo usar el evento de tipo "change" para capturar el valor y, en realidad, esto no era necesario, eso me demoró muchísimo tiempo y, al final, ¡era tan simple!🙈, el código final que si funcionó fue:_
+```Js
+    let opcion = document.querySelector('input[name="eleccion"]:checked');
+    seleccionUs= opcion.value;
+```
+_3. en un principio decidí hacer una tabla con los resultados de todas las rondas y terminé mostrando los resultados de cada ronda al momento de realizarla y sólo el resultado final(sin la suma de todos los puntos en una tabla)._
 
 ## Material consultado📌 
 * [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event)
@@ -56,6 +63,8 @@ _Programación:_
 * [https://cybmeta.com/display-none-vs-visibility-hidden-y-tu-como-escondes-las-cosas](https://cybmeta.com/display-none-vs-visibility-hidden-y-tu-como-escondes-las-cosas)
 * [https://www.jose-aguilar.com/blog/display-content-javascript/](https://www.jose-aguilar.com/blog/display-content-javascript/)
 * [https://es.stackoverflow.com/questions/17783/cómo-obtener-el-valor-de-radio-button-en-javascript#:~:text=Puedes%20seleccionar%20directamente%20el%20radio%20seleccionado%20por%20medio%20de%20la%20propiedad%20checked%20.&text=Esto%20te%20devolverá%20el%20valor%20del%20radio%20button%20que%20esté%20seleccionado.](https://es.stackoverflow.com/questions/17783/cómo-obtener-el-valor-de-radio-button-en-javascript#:~:text=Puedes%20seleccionar%20directamente%20el%20radio%20seleccionado%20por%20medio%20de%20la%20propiedad%20checked%20.&text=Esto%20te%20devolverá%20el%20valor%20del%20radio%20button%20que%20esté%20seleccionado.)
+* [https://wordcodepress.com/limpiar-un-input-con-javascript/](https://wordcodepress.com/limpiar-un-input-con-javascript/)
+
 
 
 ## Imágenes utilizadas🎨 
